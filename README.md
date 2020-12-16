@@ -8,9 +8,9 @@ Backend is created with the help of DjangorestFramework and Djangochannels to ru
 `python manage.py runserver`
 
 # Tech stack
-##Angular
-##Django
-##Mysql
-##redis
+## Angular
+## Django
+## Mysql
+## redis
 
 #To check quick demo downlod demo.zip and extract it.
