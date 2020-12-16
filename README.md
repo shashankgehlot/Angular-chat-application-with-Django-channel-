@@ -12,8 +12,9 @@ django tokenbased auth is used for login and logout.On Page refresh user can see
 
 ## Backend
 Backend is created with the help of DjangorestFramework and Djangochannels to run backend  first make database migration with `python manage.py migrate` and then
-`python manage.py runserver`
-
+`python manage.py runserver`<br>
+here is the model schema of Message.
+<img src="https://github.com/shashankgehlot/Angular-chat-application-with-Django-channel-/blob/main/demo/MessageModel.png" alt="modelschema" width="600" height="300"/>
 # Tech stack
 ### Angular
 ### Django
