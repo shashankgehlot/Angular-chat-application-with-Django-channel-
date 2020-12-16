@@ -1,0 +1,17 @@
+<!-- <textarea id="chat-log" cols="100" rows="20"></textarea><br> -->
+
+<div class="box">
+  <li *ngFor="let users of messages">
+    {{users.message}} sent by {{users.senders_name}} 
+</li>
+</div>
+<form [formGroup]="chatform" (ngSubmit)="onSubmit()"> 
+ reciver <input  placeholder='{{childMessage}}' value='{{childMessage}}' disabled=True  formControlName="reciver_name"><br>
+ sender <input  placeholder='{{username}}' value='{{username}}' disabled=True formControlName="sender_name">
+
+  <div>
+  <label for='message'>message</label>
+  <input  type='message' formControlName="message">
+  </div>
+  <button type="submit">send</button>
+  </form>

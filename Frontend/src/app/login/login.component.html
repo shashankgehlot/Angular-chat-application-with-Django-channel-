@@ -1,0 +1,18 @@
+<!-- <router-outlet></router-outlet> -->
+<h1>Chat App  Login</h1>
+<form [formGroup]="loginform" (ngSubmit)="onSubmit()"> 
+    <div>
+    <label for="username">UserName</label>
+    <input type='text' formControlName="username">
+    </div>
+    <div>
+    <label for='password'>Password</label>
+    <input  type='Password' formControlName="password">
+    </div>
+    <button type="submit">Login</button>
+    </form>
+
+    <button (click)="router.navigate(['/register']);">
+        <span>Go to register Page</span>
+     </button>
+

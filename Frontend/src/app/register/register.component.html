@@ -1,0 +1,36 @@
+<!-- <router-outlet></router-outlet> -->
+<h1>Chat App  register</h1>
+
+<form [formGroup]="RegistrationForm" (ngSubmit)="onSubmit(RegistrationForm.value)">
+    <label>
+      Username:
+      <input type="text" formControlName="username">
+    </label><br>
+    <label>
+      Password:
+      <input type="password" formControlName="password">
+    </label><br>
+    <label>
+        Email:
+        <input type="text" formControlName="email">
+      </label><br>
+    
+      <label>
+        FirstName:
+        <input type="text" formControlName="first_name">
+      </label><br>
+      <label>
+        LastName:
+        <input type="text" formControlName="last_name">
+      </label><br>
+      <label>
+        submit:
+        <button class="button" type="submit">Submit</button>
+      </label>
+  </form>
+
+
+  <button (click)="router.navigate(['/login']);">
+    <span>Go to login Page</span>
+ </button>
+ 
