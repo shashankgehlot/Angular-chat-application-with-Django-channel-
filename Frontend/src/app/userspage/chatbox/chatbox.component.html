@@ -1,17 +1,23 @@
 <!-- <textarea id="chat-log" cols="100" rows="20"></textarea><br> -->
-
-<div class="box">
-  <li *ngFor="let users of messages">
+<div class="window">
+<div  *ngFor="let users of messages">
+<div  [ngClass]="{'container':users.senders_name === username,
+            'container_d':users.senders_name !== username}" >
+  <!-- <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;"> -->
+  <p>
     {{users.message}} sent by {{users.senders_name}} 
-</li>
+  </p>
+</div>
+</div>
 </div>
 <form [formGroup]="chatform" (ngSubmit)="onSubmit()"> 
- reciver <input  placeholder='{{childMessage}}' value='{{childMessage}}' disabled=True  formControlName="reciver_name"><br>
- sender <input  placeholder='{{username}}' value='{{username}}' disabled=True formControlName="sender_name">
+
+ receiver  <input class="input_cls"  placeholder='{{childMessage}}' value='{{childMessage}}' disabled=True  formControlName="reciver_name"><br>
+ sender <input  class="input_cls" placeholder='{{username}}' value='{{username}}' disabled=True formControlName="sender_name">
 
   <div>
   <label for='message'>message</label>
-  <input  type='message' formControlName="message">
+  <input   type='text' formControlName="message">
   </div>
   <button type="submit">send</button>
   </form>

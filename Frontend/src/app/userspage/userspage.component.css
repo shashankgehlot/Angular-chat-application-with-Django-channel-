@@ -4,3 +4,25 @@
 .onlinnuser {
     width: 20%;
 }
+
+.btn {
+    width: 20%;
+    display: flex;
+}
+.button2 {background-color: #008CBA !important;}
+.list{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

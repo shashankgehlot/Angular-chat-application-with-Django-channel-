@@ -1,12 +1,12 @@
 <!-- <router-outlet></router-outlet> -->
 <h1>Chat App  Login</h1>
 <form [formGroup]="loginform" (ngSubmit)="onSubmit()"> 
-    <div>
-    <label for="username">UserName</label>
+    <div class="font">
+   <div class="label_cover"><label class="lanbel_cls" for="username">UserName</label></div> 
     <input type='text' formControlName="username">
     </div>
-    <div>
-    <label for='password'>Password</label>
+    <div class="font">
+    <div class="label_cover"><label class="lanbel_cls" for='password'>Password</label></div>
     <input  type='Password' formControlName="password">
     </div>
     <button type="submit">Login</button>

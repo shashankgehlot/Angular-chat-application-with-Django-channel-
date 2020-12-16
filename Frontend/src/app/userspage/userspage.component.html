@@ -2,26 +2,26 @@
     <h2> you are logged in as {{logged_in_user}}</h2>
 </div>
 
-<div>
-<button (click)="buttonclick()">
+<div class="btn">
+<button class="button" (click)="buttonclick()">
     <span>getonlineusers</span>
 </button><br><br>
-</div>
 
+<button class="button button2" (click)="logout()">
+    <span>logout</span>
+</button>
+</div>
 <div class="chatapp">
 <div class="onlinnuser">
 <ul>
     <li *ngFor="let users of Online_user">
-        {{users.username}} <button id={{users.username}} (click)="startconv(users.username)">Chat</button>
+        <button class="button list" id={{users.username}} (click)="startconv(users.username)"> chat with {{users.username}}</button>
     </li>
 </ul>
 </div>
-<div class="division" *ngIf="showchatbox==true">
+<div  *ngIf="showchatbox==true">
     <app-chatbox [childMessage]="chat_start_with" ></app-chatbox>
 </div>
 </div>
 
 
-<button (click)="logout()">
-    <span>logout</span>
-</button>
